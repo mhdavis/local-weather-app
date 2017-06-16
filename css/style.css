@@ -1,0 +1,110 @@
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+body {
+  margin-top: 30px;
+  background-color: #add8e6;
+  background-image: url('img/clear_sky.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-width: 295px;
+  transition: background linear 1.5s;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+#box {
+  margin-top: 50px;
+  border: 2px solid black;
+}
+
+#logo {
+  background-color: #add8e6;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  margin-bottom: 30px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+
+}
+
+#logoBack {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 2px solid black;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: #add8e6;
+}
+
+.btn {
+  background-color: #add8e6;
+  border: 2px solid black;
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+  margin: 15px;
+}
+
+.btn:hover {
+  background-color: #52badc;
+  border: 2px solid black;
+}
+
+.btn:active {
+  background-color: green;
+  border: 2px solid black;
+}
+
+#obsTime {
+  font-size: 15px;
+}
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+.fade-in.four {
+-webkit-animation-delay: 2.1s;
+-moz-animation-delay: 2.1s;
+animation-delay: 2.1s;
+}
