@@ -114,6 +114,10 @@ function getPicture(data) {
     } //end else statement
 } //end function
 
+/*FUNCTION getWeatherandPicture
+main functon that compiles all other functions
+after API call is made.
+*/
 function getWeatherAndPicture () {
   $.getJSON('https://api.wunderground.com/api/32057b04a951d90e/conditions/q/autoip.json', function(data) {
     console.log(data);
